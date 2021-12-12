@@ -12,7 +12,6 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
 /* Header */
 header {
     position: sticky;
@@ -143,10 +142,14 @@ header {
     margin-top: 35px;
     margin-bottom: 105px;
 }
-.feature-img {
+.mobile-img {
     width: 54px;
     margin: 0 auto;
     margin-top: 20px;
+}
+.desktop-img {
+    display: none;
+    width: 335px;
 }
 .first-feature {
     margin-top: 50px;
@@ -210,8 +213,60 @@ footer {
     padding-top: 70px;
     padding-bottom: 30px;
     color: rgba(255, 255, 255, 0.75);
-    background-color: #353537;
+    background-color: hsl(240, 2%, 21%);
+}
+footer section {
+    margin-top: 30px;
+}
+.footer-section-heading {
+    font-size: 1.3rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+    /* Hammer */
+.hammer {
+    margin-top: 0px;
 }
 .hammer a, .more a {
     color: rgba(255, 255, 255, 0.65);
+    line-height: 24px;
+    font-size: 1.1rem;
+}
+.hammer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+    /* Social */
+.social-box {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 0.6;
+}
+.social a {
+    display: inline-block;
+    color: rgba(53, 53, 55, 1);
+    margin-right: 20px;
+}
+.social-icon {
+    width: 30px;
+}
+    /* More */
+.more {
+    margin-bottom: 80px;
+}
+.more-nav {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+}
+    /* Copy */
+.copy {
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.4;
+    margin: auto;
 }
