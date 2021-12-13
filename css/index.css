@@ -19,7 +19,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 60px;
+    padding: 0px 20px;
+    max-height: 60px;
     border-bottom: 2px solid rgba(77, 77, 77, 0.659);
     background-color: rgba(254, 254, 254, 1);
 }
@@ -29,7 +30,6 @@ header {
     align-self: center;
     font-size: 24px;
     font-weight: 900;
-    margin: 0px 20px;
 }
     /* navigation */
 .burger {
@@ -39,7 +39,6 @@ header {
 }
 .h-line {
     width: 25px;
-    margin: 0px 20px;
     margin-bottom: 8px;
     border: 1px solid rgba(77, 77, 77, 1);
 }
@@ -129,6 +128,7 @@ header {
 }
 .section-heading {
     text-align: center;
+    font-weight: 500;
     font-size: 2rem;
     margin: 0px;
 }
@@ -193,6 +193,7 @@ header {
 }
 #message {
     min-height: 120px;
+    padding: 10px 15px;
 }
 .email-button {
     display: flex;
@@ -209,11 +210,9 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 0px 20px;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding: 70px 20px 0px;
     color: rgba(255, 255, 255, 0.75);
-    background-color: hsl(240, 2%, 21%);
+    background-color: rgb(52, 52, 55);
 }
 footer section {
     margin-top: 30px;
@@ -267,6 +266,170 @@ footer section {
 .copy {
     text-align: center;
     font-size: 12px;
-    opacity: 0.4;
+    opacity: 1;
     margin: auto;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: rgb(52, 52, 55);
+}
+
+/* TABLET */
+@media all and (min-device-width: 768px) {
+    header {
+        padding: 0px 45px;
+        min-height: 80px;
+    }
+    .logo {
+        font-size: 2rem;
+        margin: 0px;
+    }
+    .burger {
+        display: none;
+    }
+    .top-nav {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: auto;
+        width: 100%;
+        height: 80px;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 0;
+    }
+    .top-nav ul {
+        display: flex;
+        padding: 0px;
+    }
+    .top-nav li {
+        margin: 0px 0px 0px 30px ;
+    }
+    .top-nav a {
+        color: rgba(0, 0, 0, 1);
+    }
+    /* Showcase */
+    .showcase-container {
+        flex-direction: row;
+        padding: 100px 45px 160px;
+    }
+    .showcase-cta-container {
+        width: 190px;
+        margin: 25px 0px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .showcase-container h1 {
+        font-size: 3.5rem;
+        text-align: left;
+        margin: 0px;
+    }
+    .showcase-img {
+        width: 360px;
+        margin: 0px;
+    }
+    /* Features */
+    .section-heading {
+        font-size: 2.5rem;
+    }
+    .feature-box {
+        flex-direction: row;
+        margin-top: 70px;
+    }
+    .is-reverse {
+        flex-direction: row-reverse;
+    }
+    .is-aligned-left {
+        text-align: left;
+    }
+    .is-aligned-right {
+        text-align: right;
+    }
+    .feature-copy {
+        padding: 0px 30px;
+    }
+    .feature-title {
+        font-size: 2rem;
+    }
+    .feature-description {
+        font-size: 1.5rem;
+    }
+    .mobile-img {
+        display: none;
+    }
+    .desktop-img {
+        display: inline-block;
+    }
+    /* Email */
+    .email-form {
+        width: 60%;
+        margin: auto;
+        margin-top: 45px;
+        margin-bottom: 140px;
+    }
+    /* Footer */
+    footer {
+        flex-direction: row;
+        padding: 70px 45px;
+    }
+    .hammer, .social, .more {
+        align-self: flex-start;
+        margin: 0px 90px 0px 0px;
+    }
+}
+/* Laptop */
+@media all and (min-device-width: 1024px) {
+    /* Header */
+    header {
+        padding: 0px 100px;
+    }
+    .logo {
+        font-size: 2.3rem;
+    }
+    .top-nav a {
+        font-size: 1.3rem;
+    }
+    /* Showcase */
+    .showcase-container {
+        padding: 180px 100px 200px;
+    }
+    .showcase-cta-container {
+        width: 240px;
+    }
+    .showcase-cta {
+        font-size: 2.3rem;
+        width: 224px;
+    }
+    .showcase-container h1 {
+        font-size: 4.5rem;
+    }
+    .showcase-img {
+        width: 555px;
+    }
+    /* Feature */
+    .section-heading {
+        font-size: 3.5rem;
+    }
+    .feature-box {
+        margin: 100px 100px 200px;
+    }
+    .feature-copy {
+        width: 50vw;
+    }
+    .feature-title, .feature-description {
+        width: 80%;
+    }
+    .feature-title {
+        font-size: 2.7rem;
+    }
+    .feature-description {
+        font-size: 2rem;
+    }
+    .flex-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .desktop-img {
+        width: 530px;
+    }
 }
