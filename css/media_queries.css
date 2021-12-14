@@ -3,9 +3,6 @@
     :root {
         font-size: 16px;
     }
-    body {
-        position: static;
-    }
     /* Features */
     .mobile-img {
         width: 81px;
