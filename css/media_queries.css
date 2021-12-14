@@ -1,1 +1,6 @@
-
+/* 425px */
+@media all and (min-device-width: 425px) {
+    body {
+        position: static;
+    }
+}
