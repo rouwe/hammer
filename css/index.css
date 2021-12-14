@@ -8,6 +8,7 @@ a {
     color: rgba(0, 0, 0, 1);
 }
 body {
+    position: absolute;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -272,7 +273,6 @@ footer section {
     color: rgba(255, 255, 255, 0.4);
     background-color: rgb(52, 52, 55);
 }
-
 /* TABLET */
 @media all and (min-device-width: 768px) {
     header {
@@ -302,7 +302,8 @@ footer section {
         padding: 0px;
     }
     .top-nav li {
-        margin: 0px 0px 0px 30px ;
+        margin: 0px 0px 0px 30px;
+        padding: 0px;
     }
     .top-nav a {
         color: rgba(0, 0, 0, 1);
@@ -334,6 +335,7 @@ footer section {
     .feature-box {
         flex-direction: row;
         margin-top: 70px;
+        /* padding: 0px 45px; */
     }
     .is-reverse {
         flex-direction: row-reverse;
@@ -343,9 +345,6 @@ footer section {
     }
     .is-aligned-right {
         text-align: right;
-    }
-    .feature-copy {
-        padding: 0px 30px;
     }
     .feature-title {
         font-size: 2rem;
@@ -374,6 +373,11 @@ footer section {
     .hammer, .social, .more {
         align-self: flex-start;
         margin: 0px 90px 0px 0px;
+    }
+}
+@media all and (min-device-width: 425px) {
+    body {
+        position: static;
     }
 }
 /* Laptop */
@@ -431,5 +435,23 @@ footer section {
     }
     .desktop-img {
         width: 530px;
+    }
+    /* Email */
+    .email-container {
+        width: 80%;
+        margin: 0px auto;
+    }
+    .email-container label {
+        font-size: 1.4rem;
+    }
+    .email-form {
+        padding: 60px 30px;
+    }
+    .email-container input, #message {
+        font-size: 1.3rem;
+    }
+    /* Footer */
+    footer {
+        padding: 70px 100px;
     }
 }
