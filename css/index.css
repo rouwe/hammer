@@ -375,11 +375,6 @@ footer section {
         margin: 0px 90px 0px 0px;
     }
 }
-@media all and (min-device-width: 425px) {
-    body {
-        position: static;
-    }
-}
 /* Laptop */
 @media all and (min-device-width: 1024px) {
     /* Header */
