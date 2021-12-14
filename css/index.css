@@ -273,6 +273,12 @@ footer section {
     color: rgba(255, 255, 255, 0.4);
     background-color: rgb(52, 52, 55);
 }
+/* 425px Body */
+@media all and (min-device-width: 425px) {
+    body {
+        position: static;
+    }
+}
 /* TABLET */
 @media all and (min-device-width: 768px) {
     header {
