@@ -413,7 +413,7 @@ footer section {
         font-size: 4.5rem;
     }
     .showcase-img {
-        width: 555px;
+        min-width: 555px;
     }
     /* Feature */
     .section-heading {
